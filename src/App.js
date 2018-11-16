@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
 import { I18nProvider } from "@lingui/react";
 import { i18n, defaultLocale, supportedLocale } from "./i18n";
@@ -42,12 +42,14 @@ const RootRedirect = () => {
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route path={`${basePath}/`} component={RootRedirect} exact />
-          <Route path={`${basePath}/:locale`} component={I18nRoutes} />
-        </Switch>
-      </BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>} maxDuration={5000}>
+        <BrowserRouter>
+          <Switch>
+            <Route path={`${basePath}/`} component={RootRedirect} exact />
+            <Route path={`${basePath}/:locale`} component={I18nRoutes} />
+          </Switch>
+        </BrowserRouter>
+      </Suspense>
     );
   }
 }
