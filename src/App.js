@@ -1,31 +1,30 @@
 import React, { Component } from "react";
 import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom";
-import { I18nProvider } from "@lingui/react";
 import { i18n, defaultLocale, supportedLocale } from "./i18n";
 import Home from "./Home";
 import NotFound from "./NotFound";
 import { basePath } from "./config";
+import I18nLoader from "./I18nLoader";
+import { HelmetProvider } from 'react-helmet-async';
 
 const I18nRoutes = ({ match }) => {
   let { locale } = match.params;
 
   if (!supportedLocale(locale)) {
-    i18n.activate(i18n.locale || defaultLocale);
     return (
-      <I18nProvider i18n={i18n}>
+      <I18nLoader locale={i18n.locale || defaultLocale}>
         <Route component={NotFound} />
-      </I18nProvider>
+      </I18nLoader>
     );
   }
 
-  i18n.activate(locale);
   return (
-    <I18nProvider i18n={i18n}>
+    <I18nLoader locale={locale}>
       <Switch>
         <Route path={`${match.path}/`} component={Home} exact />
         <Route component={NotFound} />
       </Switch>
-    </I18nProvider>
+    </I18nLoader>
   );
 };
 
@@ -42,12 +41,14 @@ const RootRedirect = () => {
 class App extends Component {
   render() {
     return (
+      <HelmetProvider>
       <BrowserRouter>
         <Switch>
           <Route path={`${basePath}/`} component={RootRedirect} exact />
           <Route path={`${basePath}/:locale`} component={I18nRoutes} />
         </Switch>
       </BrowserRouter>
+      </HelmetProvider>
     );
   }
 }

@@ -13,10 +13,8 @@ const loadCatalog = async locale => {
     navigator.userAgent !== "ReactSnap" &&
     process.env.NODE_ENV !== "development"
   ) {
-    console.log("start");
     // intentionally slow translations to simmulate bigger JS bundle
     await pause(500);
-    console.log("finish");
   }
   return import(/* webpackMode: "lazy", webpackChunkName: "i18n-[index]" */
   `./locales/${locale}/messages.js`);
