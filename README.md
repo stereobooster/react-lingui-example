@@ -398,3 +398,52 @@ export default ({ locales }) => (
   />
 );
 ```
+
+## Add meta tags with the help of React Helmet
+
+```shell
+npm install --save react-helmet
+
+# or using Yarn
+yarn add react-helmet
+```
+
+The code is very similar to the one we used in "Reimplement `LanguageSwitcher` for React Router":
+
+```js
+import React from "react";
+import { Route } from "react-router-dom";
+import Helmet from "react-helmet";
+
+export default ({ locales }) => (
+  <Route
+    children={({ match }) => (
+      <Helmet
+        htmlAttributes={{ lang: match.params.locale }}
+        link={Object.keys(locales).map(locale => {
+          const url = match.url.replace(
+            new RegExp(`^/${match.params.locale}`),
+            `/${locale}`
+          );
+          return { rel: "alternate", href: url, hreflang: locale };
+        })}
+      />
+    )}
+  />
+);
+```
+
+Add it to `Home` component:
+
+```js
+import Meta from "./Meta";
+
+export default function Home() {
+  return (
+    <div style={{ padding: "20px 50px" }}>
+      <Meta locales={locales} />
+      {/* ... */}
+    </div>
+  );
+}
+```
