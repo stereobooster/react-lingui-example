@@ -137,3 +137,15 @@ import { Trans } from "@lingui/macro";
 
 <Trans>Learn React</Trans>;
 ```
+
+Run `npm run extract` (or `yarn extract`):
+
+```shell
+yarn extract
+Catalog statistics:
+┌──────────┬─────────────┬─────────┐
+│ Language │ Total count │ Missing │
+├──────────┼─────────────┼─────────┤
+│ en       │      2      │    2    │
+└──────────┴─────────────┴─────────┘
+```
