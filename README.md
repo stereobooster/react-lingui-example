@@ -255,3 +255,12 @@ import { NumberFormat } from "@lingui/macro";
 <NumberFormat value={2000} format={{ style: "currency", currency: "USD" }} />
 <NumberFormat value={0.2} format={{ style: "percent" }} />
 ```
+
+## Usage with React Router
+
+```shell
+npm install --save react-router react-router-dom
+
+# or using Yarn
+yarn add react-router react-router-dom
+```
