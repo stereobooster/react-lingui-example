@@ -50,3 +50,12 @@ Add following scripts to your `package.json`:
   }
 }
 ```
+
+Run `npm run add-locale` (or `yarn add-locale`) with [locale codes](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) you would like to use in your app:
+
+```shell
+npm run add-locale en
+
+# or using Yarn
+yarn add-locale en
+```
