@@ -23,3 +23,16 @@ npm install --save @lingui/react@next
 yarn add --dev @lingui/cli@next @lingui/macro@next @babel/core babel-core@bridge
 yarn add @lingui/react@next
 ```
+
+Create `.linguirc` file with LinguiJS configuration in root of your project (next to `package.json`):
+
+```js
+{
+  "localeDir": "src/locales/",
+  "srcPathDirs": ["src/"],
+  "format": "lingui",
+  "fallbackLocale": "en"
+}
+```
+
+This configuration will extract messages from source files inside `src` directory and write them into message catalogs in `src/locales`.
