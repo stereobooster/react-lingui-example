@@ -2,6 +2,23 @@
 
 Based on original [Lingui tutorial](https://lingui.js.org/tutorials/setup-cra.html) and tips from [#350](https://github.com/lingui/js-lingui/issues/350).
 
+<!-- toc -->
+
+- [Install](#install)
+- [Basic usage](#basic-usage)
+- [Advanced usage](#advanced-usage)
+  * [Language switcher](#language-switcher)
+  * [Translate text without `Trans` macro](#translate-text-without-trans-macro)
+  * [`Plural`](#plural)
+  * [`DateFormat`](#dateformat)
+  * [`NumberFormat`](#numberformat)
+- [Usage with React Router](#usage-with-react-router)
+  * [Redirect from root path to localised page](#redirect-from-root-path-to-localised-page)
+  * [Reimplement `LanguageSwitcher` for React Router](#reimplement-languageswitcher-for-react-router)
+- [Add meta tags with the help of React Helmet](#add-meta-tags-with-the-help-of-react-helmet)
+
+<!-- tocstop -->
+
 ## Install
 
 (I'm using node v10.10, but maybe will work with different version)
@@ -183,7 +200,7 @@ export default withI18n(Navigation);
 
 `i18n.activate` changes current locale.
 
-### Translate text without `<Trans>` macro
+### Translate text without `Trans` macro
 
 ```js
 import { I18n } from "@lingui/react";
@@ -212,7 +229,7 @@ To provide default value for translation use comment:
 i18n._(/* i18n: Default value for Hello {name} */ t`World`);
 ```
 
-### Plural
+### `Plural`
 
 Use `Plural` macro if you need to deal with numbers.
 
@@ -229,7 +246,7 @@ import { Plural } from "@lingui/macro";
 />;
 ```
 
-### DateFormat
+### `DateFormat`
 
 Use `DateFormat` to format dates.
 
@@ -243,7 +260,7 @@ import { DateFormat } from "@lingui/macro";
 </Trans>;
 ```
 
-### NumberFormat
+### `NumberFormat`
 
 Use `NumberFormat` to format numbers.
 
