@@ -59,3 +59,30 @@ npm run add-locale en
 # or using Yarn
 yarn add-locale en
 ```
+
+Check the installation by running `npm run extract` (or `yarn extract`):
+
+```
+npm run extract
+
+# or using Yarn
+yarn extract
+```
+
+There should be no error and you should see output similar following:
+
+```shell
+yarn extract
+Catalog statistics:
+┌──────────┬─────────────┬─────────┐
+│ Language │ Total count │ Missing │
+├──────────┼─────────────┼─────────┤
+│ en       │      0      │    0    │
+└──────────┴─────────────┴─────────┘
+
+(use "lingui add-locale <language>" to add more locales)
+(use "lingui extract" to update catalogs with new messages)
+(use "lingui compile" to compile catalogs for production)
+```
+
+Congratulations! You’ve sucessfully set up project with LinguiJS.
