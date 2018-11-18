@@ -113,3 +113,17 @@ i18n.willActivate(loadCatalog);
 
 Add `src/locales/*/*.js` to `.gitignore`.
 
+Add `<I18nProvider>` to the `App`:
+
+```js
+import { I18nProvider } from "@lingui/react";
+import { i18n, defaultLocale } from "./i18n";
+
+i18n.activate(defaultLocale);
+
+class App extends Component {
+  render() {
+    return <I18nProvider i18n={i18n}>{/* ... */}</I18nProvider>;
+  }
+}
+```
