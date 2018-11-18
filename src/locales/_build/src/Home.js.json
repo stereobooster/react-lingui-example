@@ -1,177 +1,169 @@
 {
-  "Select language:": {
-    "origin": [
-      [
-        "src/App.js",
-        17
-      ]
-    ]
-  },
   "LinguiJS example": {
     "origin": [
       [
-        "src/App.js",
-        22
+        "src/Home.js",
+        11
       ]
     ]
   },
   "This is an example integration of LinguiJS with React apps.": {
     "origin": [
       [
-        "src/App.js",
-        26
+        "src/Home.js",
+        15
       ]
     ]
   },
   "Message formatting": {
     "origin": [
       [
-        "src/App.js",
-        32
+        "src/Home.js",
+        21
       ]
     ]
   },
   "All messages use ICU MessageFormat, but <0>Trans</0> macro generates this syntax from JSX.": {
     "origin": [
       [
-        "src/App.js",
-        36
+        "src/Home.js",
+        25
       ]
     ]
   },
   "Variables": {
     "origin": [
       [
-        "src/App.js",
-        43
+        "src/Home.js",
+        32
       ]
     ]
   },
   "Messages can include variables:": {
     "origin": [
       [
-        "src/App.js",
-        47
+        "src/Home.js",
+        36
       ]
     ]
   },
   "Enter your name": {
     "origin": [
       [
-        "src/App.js",
-        56
+        "src/Home.js",
+        45
       ]
     ]
   },
   "Hello {name}": {
     "origin": [
       [
-        "src/App.js",
-        60
+        "src/Home.js",
+        49
       ]
     ]
   },
   "Components": {
     "origin": [
       [
-        "src/App.js",
-        68
+        "src/Home.js",
+        57
       ]
     ]
   },
   "<0>HTML</0> and <1>React components</1> works without extra configuration.": {
     "origin": [
       [
-        "src/App.js",
-        72
+        "src/Home.js",
+        61
       ]
     ]
   },
   "Props and strings": {
     "origin": [
       [
-        "src/App.js",
-        79
+        "src/Home.js",
+        68
       ]
     ]
   },
   "React props and strings can be translated using <0>i18n</0> core:": {
     "origin": [
       [
-        "src/App.js",
-        83
+        "src/Home.js",
+        72
       ]
     ]
   },
   "You're looking good!": {
     "origin": [
       [
-        "src/App.js",
-        89
+        "src/Home.js",
+        78
       ]
     ]
   },
   "Show motto of the day": {
     "origin": [
       [
-        "src/App.js",
-        90
+        "src/Home.js",
+        79
       ]
     ]
   },
   "Formatting": {
     "origin": [
       [
-        "src/App.js",
-        97
+        "src/Home.js",
+        86
       ]
     ]
   },
   "Plurals": {
     "origin": [
       [
-        "src/App.js",
-        101
+        "src/Home.js",
+        90
       ]
     ]
   },
   "{count, plural, =0 {There're no books} one {There's one book} other {There're # books}}": {
     "origin": [
       [
-        "src/App.js",
-        106
+        "src/Home.js",
+        95
       ]
     ]
   },
   "Dates": {
     "origin": [
       [
-        "src/App.js",
-        116
+        "src/Home.js",
+        105
       ]
     ]
   },
   "Today is {0,date}": {
     "origin": [
       [
-        "src/App.js",
-        120
+        "src/Home.js",
+        109
       ]
     ]
   },
   "Numbers": {
     "origin": [
       [
-        "src/App.js",
-        126
+        "src/Home.js",
+        115
       ]
     ]
   },
   "It costs {0,number,number0} which is {1,number,number1} of our income.": {
     "origin": [
       [
-        "src/App.js",
-        130
+        "src/Home.js",
+        119
       ]
     ]
   }

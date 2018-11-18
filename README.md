@@ -278,3 +278,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
   </Switch>
 </BrowserRouter>
 ```
+
+Add `NotFound` page.
+
+```js
+<Switch>
+  <Route path="/" component={Home} exact />
+  <Route component={NotFound} />
+</Switch>
+```

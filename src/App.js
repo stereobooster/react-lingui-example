@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { I18nProvider } from "@lingui/react";
 import { i18n, defaultLocale } from "./i18n";
 import Home from "./Home";
+import NotFound from "./NotFound";
 
 i18n.activate(defaultLocale);
 
@@ -13,6 +14,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/" component={Home} exact />
+            <Route component={NotFound} />
           </Switch>
         </BrowserRouter>
       </I18nProvider>

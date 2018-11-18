@@ -1,10 +1,19 @@
 {
+  "404: not found": {
+    "translation": "",
+    "origin": [
+      [
+        "src/NotFound.js",
+        8
+      ]
+    ]
+  },
   "<0>HTML</0> and <1>React components</1> works without extra configuration.": {
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        72
+        "src/Home.js",
+        61
       ]
     ]
   },
@@ -12,8 +21,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        36
+        "src/Home.js",
+        25
       ]
     ]
   },
@@ -21,8 +30,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        68
+        "src/Home.js",
+        57
       ]
     ]
   },
@@ -30,8 +39,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        116
+        "src/Home.js",
+        105
       ]
     ]
   },
@@ -39,8 +48,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        56
+        "src/Home.js",
+        45
       ]
     ]
   },
@@ -48,8 +57,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        97
+        "src/Home.js",
+        86
       ]
     ]
   },
@@ -57,8 +66,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        60
+        "src/Home.js",
+        49
       ]
     ]
   },
@@ -66,8 +75,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        130
+        "src/Home.js",
+        119
       ]
     ]
   },
@@ -75,8 +84,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        22
+        "src/Home.js",
+        11
       ]
     ]
   },
@@ -84,8 +93,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        32
+        "src/Home.js",
+        21
       ]
     ]
   },
@@ -93,8 +102,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        47
+        "src/Home.js",
+        36
       ]
     ]
   },
@@ -102,8 +111,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        126
+        "src/Home.js",
+        115
       ]
     ]
   },
@@ -111,8 +120,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        101
+        "src/Home.js",
+        90
       ]
     ]
   },
@@ -120,8 +129,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        79
+        "src/Home.js",
+        68
       ]
     ]
   },
@@ -129,8 +138,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        83
+        "src/Home.js",
+        72
       ]
     ]
   },
@@ -138,17 +147,18 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        17
+        "src/Home.js",
+        11
       ]
-    ]
+    ],
+    "obsolete": true
   },
   "Show motto of the day": {
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        90
+        "src/Home.js",
+        79
       ]
     ]
   },
@@ -156,8 +166,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        26
+        "src/Home.js",
+        15
       ]
     ]
   },
@@ -165,8 +175,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        120
+        "src/Home.js",
+        109
       ]
     ]
   },
@@ -174,8 +184,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        43
+        "src/Home.js",
+        32
       ]
     ]
   },
@@ -183,8 +193,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        89
+        "src/Home.js",
+        78
       ]
     ]
   },
@@ -192,8 +202,8 @@
     "translation": "",
     "origin": [
       [
-        "src/App.js",
-        106
+        "src/Home.js",
+        95
       ]
     ]
   }

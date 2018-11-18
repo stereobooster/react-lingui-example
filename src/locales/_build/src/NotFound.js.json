@@ -1,0 +1,10 @@
+{
+  "404: not found": {
+    "origin": [
+      [
+        "src/NotFound.js",
+        8
+      ]
+    ]
+  }
+}

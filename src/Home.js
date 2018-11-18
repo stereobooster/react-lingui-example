@@ -7,10 +7,6 @@ import IntegerStepper from "./helpers/IntegerStepper";
 export default function Home() {
   return (
     <div style={{ padding: "20px 50px" }}>
-      <p>
-        <Trans>Select language:</Trans>
-      </p>
-
       <h1>
         <Trans>LinguiJS example</Trans>
       </h1>
