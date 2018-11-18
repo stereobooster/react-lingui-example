@@ -87,7 +87,7 @@ Catalog statistics:
 
 Congratulations! You’ve sucessfully set up project with LinguiJS.
 
-## Use
+## Basic usage
 
 (based on [example project](https://github.com/lingui/js-lingui/tree/next/examples/react/src))
 
@@ -149,3 +149,7 @@ Catalog statistics:
 │ en       │      2      │    2    │
 └──────────┴─────────────┴─────────┘
 ```
+
+Now you can start your development environment with `npm run start` (or `yarn start`).
+
+You can edit `src/locales/*/messages.json` to change translations or upload those files to translation service.
