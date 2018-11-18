@@ -1,19 +1,10 @@
 {
-  "Edit <0>src/App.js</0> and save to reload.": {
-    "translation": "",
-    "origin": [
-      [
-        "src/App.js",
-        18
-      ]
-    ]
-  },
   "Learn React": {
     "translation": "",
     "origin": [
       [
         "src/App.js",
-        28
+        12
       ]
     ]
   }
