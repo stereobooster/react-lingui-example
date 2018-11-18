@@ -36,3 +36,17 @@ Create `.linguirc` file with LinguiJS configuration in root of your project (nex
 ```
 
 This configuration will extract messages from source files inside `src` directory and write them into message catalogs in `src/locales`.
+
+Add following scripts to your `package.json`:
+
+```js
+{
+  "scripts": {
+    "start": "lingui compile && react-scripts start",
+    "build": "lingui compile && react-scripts build",
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
+  }
+}
+```
