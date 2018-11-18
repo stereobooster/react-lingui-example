@@ -110,3 +110,6 @@ function loadCatalog(locale) {
 export const i18n = setupI18n();
 i18n.willActivate(loadCatalog);
 ```
+
+Add `src/locales/*/*.js` to `.gitignore`.
+
