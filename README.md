@@ -12,3 +12,14 @@ Follow [Create React App](https://github.com/facebook/create-react-app) document
 npx create-react-app react-lingui-example
 cd react-lingui-example
 ```
+
+Install `@lingui/cli`, `@lingui/macro` and Babel core packages as a development dependencies and `@lingui/react` as a runtime dependency.
+
+```shell
+npm install --save-dev @lingui/cli@next @lingui/macro@next @babel/core babel-core@bridge
+npm install --save @lingui/react@next
+
+# or using Yarn
+yarn add --dev @lingui/cli@next @lingui/macro@next @babel/core babel-core@bridge
+yarn add @lingui/react@next
+```
