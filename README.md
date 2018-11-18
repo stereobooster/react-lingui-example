@@ -276,7 +276,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
   <Switch>
     <Route path="/" component={Home} exact />
   </Switch>
-</BrowserRouter>
+</BrowserRouter>;
 ```
 
 Add `NotFound` page.
@@ -286,4 +286,47 @@ Add `NotFound` page.
   <Route path="/" component={Home} exact />
   <Route component={NotFound} />
 </Switch>
+```
+
+Add `I18nRoutes`:
+
+```js
+const I18nRoutes = ({ match }) => { /* ... */ }
+
+// ...
+
+<Switch>
+  <Route path="/:locale" component={I18nRoutes} />
+  <Route component={NotFound} />
+</Switch>
+```
+
+It will pick `locale` from path:
+
+```js
+const I18nRoutes = ({ match }) => {
+  let { locale } = match.params;
+  //...
+};
+```
+
+It will check if it is supported `locale`, if not it will return `NotFound` page:
+
+```js
+if (!supportedLocale(locale)) {
+  i18n.activate(defaultLocale);
+  return <NotFound />;
+}
+```
+
+it is supported `locale` it will activate given `locale` and return [nested routes](https://github.com/reactjs/react-router-tutorial/tree/master/lessons/04-nested-routes):
+
+```js
+i18n.activate(locale);
+return (
+  <Switch>
+    <Route path={`${match.path}/`} component={Home} exact />
+    <Route component={NotFound} />
+  </Switch>
+);
 ```
