@@ -182,3 +182,32 @@ export default withI18n(Navigation);
 `i18n.locale` provides current locale.
 
 `i18n.activate` changes current locale.
+
+### Translate text without `<Trans>` macro
+
+```js
+import { I18n } from "@lingui/react";
+import { t } from "@lingui/macro";
+
+// ...
+
+<I18n>
+  {({ i18n }) => (
+    <button onClick={() => alert(i18n._(t`You're looking good!`))}>
+      <Trans>Show motto of the day</Trans>
+    </button>
+  )}
+</I18n>;
+```
+
+`I18n` is a "Render Prop" component, which provides `i18n` object. The same one which we pass to `<I18nProvider i18n={i18n}>`.
+
+`i18n._` is a translation function, which will actually do the translation.
+
+`t` is a macro which is used by `extract` command.
+
+To provide default value for translation use comment:
+
+```js
+i18n._(/* i18n: Default value for Hello {name} */ t`World`);
+```

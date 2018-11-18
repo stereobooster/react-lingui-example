@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/App.js",
-        15
+        16
       ]
     ]
   },
@@ -11,7 +11,111 @@
     "origin": [
       [
         "src/App.js",
-        20
+        21
+      ]
+    ]
+  },
+  "This is an example integration of LinguiJS with React apps.": {
+    "origin": [
+      [
+        "src/App.js",
+        25
+      ]
+    ]
+  },
+  "Message formatting": {
+    "origin": [
+      [
+        "src/App.js",
+        31
+      ]
+    ]
+  },
+  "All messages use ICU MessageFormat, but <0>Trans</0> macro generates this syntax from JSX.": {
+    "origin": [
+      [
+        "src/App.js",
+        35
+      ]
+    ]
+  },
+  "Variables": {
+    "origin": [
+      [
+        "src/App.js",
+        42
+      ]
+    ]
+  },
+  "Messages can include variables:": {
+    "origin": [
+      [
+        "src/App.js",
+        46
+      ]
+    ]
+  },
+  "Enter your name": {
+    "origin": [
+      [
+        "src/App.js",
+        55
+      ]
+    ]
+  },
+  "Hello {name}": {
+    "origin": [
+      [
+        "src/App.js",
+        59
+      ]
+    ]
+  },
+  "Components": {
+    "origin": [
+      [
+        "src/App.js",
+        67
+      ]
+    ]
+  },
+  "<0>HTML</0> and <1>React components</1> works without extra configuration.": {
+    "origin": [
+      [
+        "src/App.js",
+        71
+      ]
+    ]
+  },
+  "Props and strings": {
+    "origin": [
+      [
+        "src/App.js",
+        78
+      ]
+    ]
+  },
+  "React props and strings can be translated using <0>i18n</0> core:": {
+    "origin": [
+      [
+        "src/App.js",
+        82
+      ]
+    ]
+  },
+  "You're looking good!": {
+    "origin": [
+      [
+        "src/App.js",
+        88
+      ]
+    ]
+  },
+  "Show motto of the day": {
+    "origin": [
+      [
+        "src/App.js",
+        89
       ]
     ]
   }

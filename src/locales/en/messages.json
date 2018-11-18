@@ -1,10 +1,91 @@
 {
+  "<0>HTML</0> and <1>React components</1> works without extra configuration.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        71
+      ]
+    ]
+  },
+  "All messages use ICU MessageFormat, but <0>Trans</0> macro generates this syntax from JSX.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        35
+      ]
+    ]
+  },
+  "Components": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        67
+      ]
+    ]
+  },
+  "Enter your name": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        55
+      ]
+    ]
+  },
+  "Hello {name}": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        59
+      ]
+    ]
+  },
   "LinguiJS example": {
     "translation": "",
     "origin": [
       [
         "src/App.js",
-        20
+        21
+      ]
+    ]
+  },
+  "Message formatting": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        31
+      ]
+    ]
+  },
+  "Messages can include variables:": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        46
+      ]
+    ]
+  },
+  "Props and strings": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        78
+      ]
+    ]
+  },
+  "React props and strings can be translated using <0>i18n</0> core:": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        82
       ]
     ]
   },
@@ -13,7 +94,43 @@
     "origin": [
       [
         "src/App.js",
-        15
+        16
+      ]
+    ]
+  },
+  "Show motto of the day": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        89
+      ]
+    ]
+  },
+  "This is an example integration of LinguiJS with React apps.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        25
+      ]
+    ]
+  },
+  "Variables": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        42
+      ]
+    ]
+  },
+  "You're looking good!": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        88
       ]
     ]
   }
