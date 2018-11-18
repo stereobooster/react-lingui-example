@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { I18nProvider, I18n } from "@lingui/react";
-import { Trans, t } from "@lingui/macro";
+import { Trans, t, Plural } from "@lingui/macro";
 import { i18n, defaultLocale, locales } from "./i18n";
 import LanguageSwitcher from "./helpers/LanguageSwitcher";
 import InputValue from "./helpers/InputValue";
+import IntegerStepper from "./helpers/IntegerStepper"
 
 i18n.activate(defaultLocale);
 
@@ -91,6 +92,25 @@ class App extends Component {
               )}
             </I18n>
           </p>
+
+          <h2>
+            <Trans>Formatting</Trans>
+          </h2>
+
+          <h3>
+            <Trans>Plurals</Trans>
+          </h3>
+
+          <IntegerStepper>
+            {count => (
+              <Plural
+                value={count}
+                _0="There're no books"
+                one="There's one book"
+                other="There're # books"
+              />
+            )}
+          </IntegerStepper>
         </div>
       </I18nProvider>
     );

@@ -211,3 +211,20 @@ To provide default value for translation use comment:
 ```js
 i18n._(/* i18n: Default value for Hello {name} */ t`World`);
 ```
+
+### Plural
+
+Use `Plural` macro if you need to deal with numbers.
+
+```js
+import { Plural } from "@lingui/macro";
+
+// ...
+
+<Plural
+  value={count}
+  _0="There're no books"
+  one="There's one book"
+  other="There're # books"
+/>;
+```

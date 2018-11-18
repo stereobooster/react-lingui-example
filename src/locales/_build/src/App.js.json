@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/App.js",
-        16
+        17
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "src/App.js",
-        21
+        22
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "src/App.js",
-        25
+        26
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "src/App.js",
-        31
+        32
       ]
     ]
   },
@@ -35,7 +35,7 @@
     "origin": [
       [
         "src/App.js",
-        35
+        36
       ]
     ]
   },
@@ -43,7 +43,7 @@
     "origin": [
       [
         "src/App.js",
-        42
+        43
       ]
     ]
   },
@@ -51,7 +51,7 @@
     "origin": [
       [
         "src/App.js",
-        46
+        47
       ]
     ]
   },
@@ -59,7 +59,7 @@
     "origin": [
       [
         "src/App.js",
-        55
+        56
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "src/App.js",
-        59
+        60
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "src/App.js",
-        67
+        68
       ]
     ]
   },
@@ -83,7 +83,7 @@
     "origin": [
       [
         "src/App.js",
-        71
+        72
       ]
     ]
   },
@@ -91,7 +91,7 @@
     "origin": [
       [
         "src/App.js",
-        78
+        79
       ]
     ]
   },
@@ -99,7 +99,7 @@
     "origin": [
       [
         "src/App.js",
-        82
+        83
       ]
     ]
   },
@@ -107,7 +107,7 @@
     "origin": [
       [
         "src/App.js",
-        88
+        89
       ]
     ]
   },
@@ -115,7 +115,31 @@
     "origin": [
       [
         "src/App.js",
-        89
+        90
+      ]
+    ]
+  },
+  "Formatting": {
+    "origin": [
+      [
+        "src/App.js",
+        97
+      ]
+    ]
+  },
+  "Plurals": {
+    "origin": [
+      [
+        "src/App.js",
+        101
+      ]
+    ]
+  },
+  "{count, plural, =0 {There're no books} one {There's one book} other {There're # books}}": {
+    "origin": [
+      [
+        "src/App.js",
+        106
       ]
     ]
   }
