@@ -330,3 +330,24 @@ return (
   </Switch>
 );
 ```
+
+Add redirect from root path to localised page based on the browser preferences:
+
+```js
+const RootRedirect = () => {
+  let [locale] = (
+    navigator.language ||
+    navigator.browserLanguage ||
+    defaultLocale
+  ).split("-");
+  if (!supportedLocale(locale)) locale = defaultLocale;
+  return <Redirect to={`/${locale}`} />;
+};
+
+// ...
+
+<Switch>
+  <Route path="/" component={RootRedirect} exact />
+  <Route path="/:locale" component={I18nRoutes} />
+</Switch>;
+```
