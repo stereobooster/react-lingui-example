@@ -158,5 +158,21 @@
         120
       ]
     ]
+  },
+  "Numbers": {
+    "origin": [
+      [
+        "src/App.js",
+        126
+      ]
+    ]
+  },
+  "It costs {0,number,number0} which is {1,number,number1} of our income.": {
+    "origin": [
+      [
+        "src/App.js",
+        130
+      ]
+    ]
   }
 }

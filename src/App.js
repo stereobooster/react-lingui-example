@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { I18nProvider, I18n } from "@lingui/react";
-import { Trans, t, Plural, DateFormat } from "@lingui/macro";
+import { Trans, t, Plural, DateFormat, NumberFormat } from "@lingui/macro";
 import { i18n, defaultLocale, locales } from "./i18n";
 import LanguageSwitcher from "./helpers/LanguageSwitcher";
 import InputValue from "./helpers/InputValue";
@@ -119,6 +119,23 @@ class App extends Component {
           <p>
             <Trans>
               Today is <DateFormat value={new Date()} />
+            </Trans>
+          </p>
+
+          <h3>
+            <Trans>Numbers</Trans>
+          </h3>
+
+          <p>
+            <Trans>
+              It costs{" "}
+              <NumberFormat
+                value={2000}
+                format={{ style: "currency", currency: "USD" }}
+              />{" "}
+              which is{" "}
+              <NumberFormat value={0.2} format={{ style: "percent" }} /> of our
+              income.
             </Trans>
           </p>
         </div>

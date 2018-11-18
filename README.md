@@ -240,5 +240,18 @@ import { DateFormat } from "@lingui/macro";
 
 <Trans>
   Today is <DateFormat value={new Date()} />
-</Trans>
+</Trans>;
+```
+
+### NumberFormat
+
+Use `NumberFormat` to format numbers.
+
+```js
+import { NumberFormat } from "@lingui/macro";
+
+// ...
+
+<NumberFormat value={2000} format={{ style: "currency", currency: "USD" }} />
+<NumberFormat value={0.2} format={{ style: "percent" }} />
 ```
