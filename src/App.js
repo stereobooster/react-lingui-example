@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { I18nProvider } from "@lingui/react";
+import { Trans } from "@lingui/macro";
 import { i18n, defaultLocale } from "./i18n";
 import logo from "./logo.svg";
 import "./App.css";
@@ -14,7 +15,9 @@ class App extends Component {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
-              Edit <code>src/App.js</code> and save to reload.
+              <Trans>
+                Edit <code>src/App.js</code> and save to reload.
+              </Trans>
             </p>
             <a
               className="App-link"
@@ -22,7 +25,7 @@ class App extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn React
+              <Trans>Learn React</Trans>
             </a>
           </header>
         </div>

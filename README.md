@@ -127,3 +127,13 @@ class App extends Component {
   }
 }
 ```
+
+Use `<Trans>` macro to mark text for tanslation:
+
+```js
+import { Trans } from "@lingui/macro";
+
+// ...
+
+<Trans>Learn React</Trans>;
+```
