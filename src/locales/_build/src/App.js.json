@@ -142,5 +142,21 @@
         106
       ]
     ]
+  },
+  "Dates": {
+    "origin": [
+      [
+        "src/App.js",
+        116
+      ]
+    ]
+  },
+  "Today is {0,date}": {
+    "origin": [
+      [
+        "src/App.js",
+        120
+      ]
+    ]
   }
 }

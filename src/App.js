@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { I18nProvider, I18n } from "@lingui/react";
-import { Trans, t, Plural } from "@lingui/macro";
+import { Trans, t, Plural, DateFormat } from "@lingui/macro";
 import { i18n, defaultLocale, locales } from "./i18n";
 import LanguageSwitcher from "./helpers/LanguageSwitcher";
 import InputValue from "./helpers/InputValue";
-import IntegerStepper from "./helpers/IntegerStepper"
+import IntegerStepper from "./helpers/IntegerStepper";
 
 i18n.activate(defaultLocale);
 
@@ -111,6 +111,16 @@ class App extends Component {
               />
             )}
           </IntegerStepper>
+
+          <h3>
+            <Trans>Dates</Trans>
+          </h3>
+
+          <p>
+            <Trans>
+              Today is <DateFormat value={new Date()} />
+            </Trans>
+          </p>
         </div>
       </I18nProvider>
     );

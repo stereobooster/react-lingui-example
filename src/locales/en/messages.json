@@ -26,6 +26,15 @@
       ]
     ]
   },
+  "Dates": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        116
+      ]
+    ]
+  },
   "Enter your name": {
     "translation": "",
     "origin": [
@@ -131,6 +140,15 @@
       [
         "src/App.js",
         26
+      ]
+    ]
+  },
+  "Today is {0,date}": {
+    "translation": "",
+    "origin": [
+      [
+        "src/App.js",
+        120
       ]
     ]
   },

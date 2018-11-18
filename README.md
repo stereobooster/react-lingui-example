@@ -228,3 +228,17 @@ import { Plural } from "@lingui/macro";
   other="There're # books"
 />;
 ```
+
+### DateFormat
+
+Use `DateFormat` to format dates.
+
+```js
+import { DateFormat } from "@lingui/macro";
+
+// ...
+
+<Trans>
+  Today is <DateFormat value={new Date()} />
+</Trans>
+```
