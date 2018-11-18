@@ -153,3 +153,32 @@ Catalog statistics:
 Now you can start your development environment with `npm run start` (or `yarn start`).
 
 You can edit `src/locales/*/messages.json` to change translations or upload those files to translation service.
+
+## Advanced usage
+
+### Language switcher
+
+Simplest language switcher can be implemented this way:
+
+```js
+import * as React from "react";
+import { withI18n } from "@lingui/react";
+
+const Navigation = ({ i18n, locales }) => (
+  <select selected={i18n.locale}>
+    {Object.keys(locales).map(locale => (
+      <option key={locale} onClick={() => i18n.activate(locale)} value={locale}>
+        {locales[locale]}
+      </option>
+    ))}
+  </select>
+);
+
+export default withI18n(Navigation);
+```
+
+`withI18n` is a HOC, which provides `i18n` object. The same one which we pass to `<I18nProvider i18n={i18n}>`.
+
+`i18n.locale` provides current locale.
+
+`i18n.activate` changes current locale.

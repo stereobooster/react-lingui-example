@@ -1,9 +1,17 @@
 {
-  "Learn React": {
+  "Select language:": {
     "origin": [
       [
         "src/App.js",
-        12
+        15
+      ]
+    ]
+  },
+  "LinguiJS example": {
+    "origin": [
+      [
+        "src/App.js",
+        20
       ]
     ]
   }
