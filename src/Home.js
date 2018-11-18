@@ -1,15 +1,14 @@
 import React from "react";
 import { I18n } from "@lingui/react";
 import { Trans, t, Plural, DateFormat, NumberFormat } from "@lingui/macro";
-import LanguageSwitcher from "./helpers/LanguageSwitcher";
 import InputValue from "./helpers/InputValue";
 import IntegerStepper from "./helpers/IntegerStepper";
 
-export default function Home({ locales }) {
+export default function Home() {
   return (
     <div style={{ padding: "20px 50px" }}>
       <p>
-        <Trans>Select language:</Trans> <LanguageSwitcher locales={locales} />
+        <Trans>Select language:</Trans>
       </p>
 
       <h1>

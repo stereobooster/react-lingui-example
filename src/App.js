@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { I18nProvider } from "@lingui/react";
-import { i18n, defaultLocale, locales } from "./i18n";
+import { i18n, defaultLocale } from "./i18n";
 import Home from "./Home";
 
 i18n.activate(defaultLocale);
@@ -9,7 +10,11 @@ class App extends Component {
   render() {
     return (
       <I18nProvider i18n={i18n}>
-        <Home locales={locales} />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Home} exact />
+          </Switch>
+        </BrowserRouter>
       </I18nProvider>
     );
   }

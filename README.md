@@ -264,3 +264,17 @@ npm install --save react-router react-router-dom
 # or using Yarn
 yarn add react-router react-router-dom
 ```
+
+Add `BrowserRouter`, `Switch`, `Route`.
+
+```js
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+// ...
+
+<BrowserRouter>
+  <Switch>
+    <Route path="/" component={Home} exact />
+  </Switch>
+</BrowserRouter>
+```
