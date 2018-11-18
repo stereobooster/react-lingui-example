@@ -86,3 +86,27 @@ Catalog statistics:
 ```
 
 Congratulations! You’ve sucessfully set up project with LinguiJS.
+
+## Use
+
+(based on [example project](https://github.com/lingui/js-lingui/tree/next/examples/react/src))
+
+Create `src/i18n.js`:
+
+```js
+import { setupI18n } from "@lingui/core";
+
+export const locales = {
+  en: "English",
+  cs: "Česky"
+};
+export const defaultLocale = "en";
+
+function loadCatalog(locale) {
+  return import(/* webpackMode: "lazy", webpackChunkName: "i18n-[index]" */
+  `./locales/${locale}/messages.js`);
+}
+
+export const i18n = setupI18n();
+i18n.willActivate(loadCatalog);
+```
