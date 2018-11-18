@@ -1,0 +1,8 @@
+.link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.selected {
+  text-decoration: none;
+}

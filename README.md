@@ -331,6 +331,8 @@ return (
 );
 ```
 
+### Redirect from root path to localised page
+
 Add redirect from root path to localised page based on the browser preferences:
 
 ```js
@@ -350,4 +352,49 @@ const RootRedirect = () => {
   <Route path="/" component={RootRedirect} exact />
   <Route path="/:locale" component={I18nRoutes} />
 </Switch>;
+```
+
+### Reimplement `LanguageSwitcher` for React Router
+
+The simplest `LanguageSwitcher` can be implemented with `NavLink`:
+
+```js
+import { NavLink } from "react-router-dom";
+
+export default ({ locales }) =>
+  Object.keys(locales).map(locale => {
+    const url = `/${locale}`;
+    return (
+      <NavLink
+        key={locale}
+        to={url}
+        activeClassName={s.selected}
+        className={s.link}
+      >
+        {locales[locale]}
+      </NavLink>
+    );
+  });
+```
+
+This implementation will always redirect to the root of localized pages, for example from `/en/some/subpage` to `/cz`.
+
+If we want to change the locale, but preserve path we need to use `Route`:
+
+```js
+import { NavLink, Route } from "react-router-dom";
+
+export default ({ locales }) => (
+  <Route
+    children={({ match }) =>
+      Object.keys(locales).map(locale => {
+        const url = match.url.replace(
+          new RegExp(`^/${match.params.locale}`),
+          `/${locale}`
+        );
+        // ...
+      })
+    }
+  />
+);
 ```

@@ -3,10 +3,16 @@ import { I18n } from "@lingui/react";
 import { Trans, t, Plural, DateFormat, NumberFormat } from "@lingui/macro";
 import InputValue from "./helpers/InputValue";
 import IntegerStepper from "./helpers/IntegerStepper";
+import LanguageSwitcher from "./helpers/LanguageSwitcher";
+import { locales } from "./i18n";
 
 export default function Home() {
   return (
     <div style={{ padding: "20px 50px" }}>
+      <p>
+        <Trans>Select language:</Trans> <LanguageSwitcher locales={locales} />
+      </p>
+
       <h1>
         <Trans>LinguiJS example</Trans>
       </h1>

@@ -1,14 +1,26 @@
-import * as React from "react";
-import { withI18n } from "@lingui/react";
+import React from "react";
+import { NavLink, Route } from "react-router-dom";
+import s from "./LanguageSwitcher.module.css";
 
-const Navigation = ({ i18n, locales }) => (
-  <select selected={i18n.locale}>
-    {Object.keys(locales).map(locale => (
-      <option key={locale} onClick={() => i18n.activate(locale)} value={locale}>
-        {locales[locale]}
-      </option>
-    ))}
-  </select>
+export default ({ locales }) => (
+  <Route
+    children={({ match }) =>
+      Object.keys(locales).map(locale => {
+        const url = match.url.replace(
+          new RegExp(`^/${match.params.locale}`),
+          `/${locale}`
+        );
+        return (
+          <NavLink
+            key={locale}
+            to={url}
+            activeClassName={s.selected}
+            className={s.link}
+          >
+            {locales[locale]}
+          </NavLink>
+        );
+      })
+    }
+  />
 );
-
-export default withI18n(Navigation);
