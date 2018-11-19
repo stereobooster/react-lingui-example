@@ -1,13 +1,5 @@
 {
-  "LinguiJS example": {
-    "origin": [
-      [
-        "src/Home.js",
-        11
-      ]
-    ]
-  },
-  "This is an example integration of LinguiJS with React apps.": {
+  "Select language:": {
     "origin": [
       [
         "src/Home.js",
@@ -15,11 +7,27 @@
       ]
     ]
   },
+  "LinguiJS example": {
+    "origin": [
+      [
+        "src/Home.js",
+        19
+      ]
+    ]
+  },
+  "This is an example integration of LinguiJS with React apps.": {
+    "origin": [
+      [
+        "src/Home.js",
+        23
+      ]
+    ]
+  },
   "Message formatting": {
     "origin": [
       [
         "src/Home.js",
-        21
+        29
       ]
     ]
   },
@@ -27,7 +35,7 @@
     "origin": [
       [
         "src/Home.js",
-        25
+        33
       ]
     ]
   },
@@ -35,7 +43,7 @@
     "origin": [
       [
         "src/Home.js",
-        32
+        40
       ]
     ]
   },
@@ -43,7 +51,7 @@
     "origin": [
       [
         "src/Home.js",
-        36
+        44
       ]
     ]
   },
@@ -51,7 +59,7 @@
     "origin": [
       [
         "src/Home.js",
-        45
+        53
       ]
     ]
   },
@@ -59,7 +67,7 @@
     "origin": [
       [
         "src/Home.js",
-        49
+        57
       ]
     ]
   },
@@ -67,7 +75,7 @@
     "origin": [
       [
         "src/Home.js",
-        57
+        65
       ]
     ]
   },
@@ -75,7 +83,7 @@
     "origin": [
       [
         "src/Home.js",
-        61
+        69
       ]
     ]
   },
@@ -83,7 +91,7 @@
     "origin": [
       [
         "src/Home.js",
-        68
+        76
       ]
     ]
   },
@@ -91,7 +99,7 @@
     "origin": [
       [
         "src/Home.js",
-        72
+        80
       ]
     ]
   },
@@ -99,7 +107,7 @@
     "origin": [
       [
         "src/Home.js",
-        78
+        86
       ]
     ]
   },
@@ -107,7 +115,7 @@
     "origin": [
       [
         "src/Home.js",
-        79
+        87
       ]
     ]
   },
@@ -115,7 +123,7 @@
     "origin": [
       [
         "src/Home.js",
-        86
+        94
       ]
     ]
   },
@@ -123,7 +131,7 @@
     "origin": [
       [
         "src/Home.js",
-        90
+        98
       ]
     ]
   },
@@ -131,7 +139,7 @@
     "origin": [
       [
         "src/Home.js",
-        95
+        103
       ]
     ]
   },
@@ -139,7 +147,7 @@
     "origin": [
       [
         "src/Home.js",
-        105
+        113
       ]
     ]
   },
@@ -147,7 +155,7 @@
     "origin": [
       [
         "src/Home.js",
-        109
+        117
       ]
     ]
   },
@@ -155,7 +163,7 @@
     "origin": [
       [
         "src/Home.js",
-        115
+        123
       ]
     ]
   },
@@ -163,7 +171,7 @@
     "origin": [
       [
         "src/Home.js",
-        119
+        127
       ]
     ]
   }
