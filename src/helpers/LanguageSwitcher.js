@@ -7,7 +7,7 @@ export default ({ locales }) => (
     children={({ match }) =>
       Object.keys(locales).map(locale => {
         const url = match.url.replace(
-          new RegExp(`^/${match.params.locale}`),
+          new RegExp(`/${match.params.locale}($|/)`),
           `/${locale}`
         );
         return (

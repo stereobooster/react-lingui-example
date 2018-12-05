@@ -16,6 +16,7 @@ Based on original [Lingui tutorial](https://lingui.js.org/tutorials/setup-cra.ht
   * [Redirect from root path to localised page](#redirect-from-root-path-to-localised-page)
   * [Reimplement `LanguageSwitcher` for React Router](#reimplement-languageswitcher-for-react-router)
 - [Add meta tags with the help of React Helmet](#add-meta-tags-with-the-help-of-react-helmet)
+- [Add prerendering with the help of react-snap](#add-prerendering-with-the-help-of-react-snap)
 
 <!-- tocstop -->
 
@@ -464,3 +465,22 @@ export default function Home() {
   );
 }
 ```
+
+## Add prerendering with the help of react-snap
+
+```shell
+npm install --save react-snap
+
+# or using Yarn
+yarn add react-snap
+```
+
+Add `postbuild` hook to the `package.json`:
+
+```json
+"scripts": {
+  "postbuild": "react-snap"
+}
+```
+
+And you done!
