@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/react-lingui-example/static/js/runtime~main.1b71d80c.js"
   },
   {
-    "revision": "f34c4dab010f0217301f",
-    "url": "/react-lingui-example/static/js/main.f34c4dab.chunk.js"
+    "revision": "31cde207c0ab95cc3812",
+    "url": "/react-lingui-example/static/js/main.31cde207.chunk.js"
   },
   {
     "revision": "f79cb02b0e0adbb8bb36",
@@ -20,11 +20,11 @@ self.__precacheManifest = [
     "url": "/react-lingui-example/static/js/3.8460c2e7.chunk.js"
   },
   {
-    "revision": "f34c4dab010f0217301f",
+    "revision": "31cde207c0ab95cc3812",
     "url": "/react-lingui-example/static/css/main.429b3a70.chunk.css"
   },
   {
-    "revision": "893af8d5e37093cadc3edcff33672501",
+    "revision": "286a65a712e05f1eb6701c5e1860f6f1",
     "url": "/react-lingui-example/index.html"
   }
 ];
