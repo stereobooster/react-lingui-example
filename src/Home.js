@@ -8,8 +8,15 @@ import { locales } from "./i18n";
 import Meta from "./Meta";
 
 export default function Home() {
+  const prerendering = navigator.userAgent === "ReactSnap";
+
   return (
-    <div style={{ padding: "20px 50px" }}>
+    <div
+      style={{
+        padding: "20px 50px",
+        background: prerendering ? "#dee8eb" : "#fefee1"
+      }}
+    >
       <Meta locales={locales} />
       <p>
         <Trans>Select language:</Trans> <LanguageSwitcher locales={locales} />
