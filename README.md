@@ -47,7 +47,7 @@ Create `.linguirc` file with LinguiJS configuration in root of your project (nex
 {
   "localeDir": "src/locales/",
   "srcPathDirs": ["src/"],
-  "format": "lingui",
+  "format": "po",
   "fallbackLocale": "en"
 }
 ```

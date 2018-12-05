@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2018-12-05 21:19+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: cs\n"
+
+#: src/NotFound.js:8
+msgid "404: not found"
+msgstr ""
+
+#: src/Home.js:69
+msgid "<0>HTML</0> and <1>React components</1> works without extra configuration."
+msgstr ""
+
+#: src/Home.js:33
+msgid "All messages use ICU MessageFormat, but <0>Trans</0> macro generates this syntax from JSX."
+msgstr ""
+
+#: src/Home.js:65
+msgid "Components"
+msgstr ""
+
+#: src/Home.js:113
+msgid "Dates"
+msgstr ""
+
+#: src/Home.js:53
+msgid "Enter your name"
+msgstr ""
+
+#: src/Home.js:94
+msgid "Formatting"
+msgstr ""
+
+#: src/Home.js:57
+msgid "Hello {name}"
+msgstr ""
+
+#: src/Home.js:127
+msgid "It costs {0,number,number0} which is {1,number,number1} of our income."
+msgstr ""
+
+#: src/Home.js:19
+msgid "LinguiJS example"
+msgstr ""
+
+#: src/Home.js:29
+msgid "Message formatting"
+msgstr ""
+
+#: src/Home.js:44
+msgid "Messages can include variables:"
+msgstr ""
+
+#: src/Home.js:123
+msgid "Numbers"
+msgstr ""
+
+#: src/Home.js:98
+msgid "Plurals"
+msgstr ""
+
+#: src/Home.js:76
+msgid "Props and strings"
+msgstr ""
+
+#: src/Home.js:80
+msgid "React props and strings can be translated using <0>i18n</0> core:"
+msgstr ""
+
+#: src/Home.js:15
+msgid "Select language:"
+msgstr ""
+
+#: src/Home.js:87
+msgid "Show motto of the day"
+msgstr ""
+
+#: src/Home.js:23
+msgid "This is an example integration of LinguiJS with React apps."
+msgstr ""
+
+#: src/Home.js:117
+msgid "Today is {0,date}"
+msgstr ""
+
+#: src/Home.js:40
+msgid "Variables"
+msgstr ""
+
+#: src/Home.js:86
+msgid "You're looking good!"
+msgstr ""
+
+#: src/Home.js:103
+msgid "{count, plural, =0 {There're no books} one {There's one book} other {There're # books}}"
+msgstr ""
