@@ -21,7 +21,8 @@
     "extract": "lingui extract",
     "compile": "lingui compile",
     "deploy": "gh-pages -d ./build",
-    "markdown-toc": "markdown-toc -i ./README.md"
+    "markdown-toc": "markdown-toc -i ./README.md",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +39,10 @@
     "@lingui/macro": "^3.0.0-3",
     "babel-core": "^7.0.0-bridge.0",
     "gh-pages": "^1.2.0",
-    "markdown-toc": "^1.2.0"
+    "markdown-toc": "^1.2.0",
+    "react-snap": "1.23.0"
+  },
+  "reactSnap": {
+    "inlineCss": true
   }
 }
