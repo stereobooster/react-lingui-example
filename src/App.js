@@ -42,14 +42,12 @@ const RootRedirect = () => {
 class App extends Component {
   render() {
     return (
-      <Suspense fallback={<div>Loading...</div>} maxDuration={5000}>
-        <BrowserRouter>
-          <Switch>
-            <Route path={`${basePath}/`} component={RootRedirect} exact />
-            <Route path={`${basePath}/:locale`} component={I18nRoutes} />
-          </Switch>
-        </BrowserRouter>
-      </Suspense>
+      <BrowserRouter>
+        <Switch>
+          <Route path={`${basePath}/`} component={RootRedirect} exact />
+          <Route path={`${basePath}/:locale`} component={I18nRoutes} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

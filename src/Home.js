@@ -17,6 +17,7 @@ export default function Home() {
         background: prerendering ? "#dee8eb" : "#fefee1"
       }}
     >
+      v3.0
       <Meta locales={locales} />
       <p>
         <Trans>Select language:</Trans> <LanguageSwitcher locales={locales} />

@@ -4,7 +4,7 @@ import { I18nProvider } from "@lingui/react";
 export class I18nLoader extends React.Component {
   state = {
     catalogs: {},
-    SuspendChildren: null
+    SuspendChildren: new Promise(() => {})
   };
 
   loadCatalog = language => {
