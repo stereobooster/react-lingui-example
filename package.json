@@ -5,6 +5,7 @@
   "homepage": "https://stereobooster.github.io/react-lingui-example/",
   "dependencies": {
     "@lingui/react": "^3.0.0-3",
+    "babel-plugin-macros": "^2.4.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
@@ -22,7 +23,9 @@
     "compile": "lingui compile",
     "deploy": "gh-pages -d ./build",
     "markdown-toc": "markdown-toc -i ./README.md",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,9 +38,15 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@lingui/cli": "^3.0.0-3",
     "@lingui/macro": "^3.0.0-3",
+    "@storybook/addon-actions": "^4.0.12",
+    "@storybook/addon-links": "^4.0.12",
+    "@storybook/react": "^4.0.12",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "8",
     "gh-pages": "^1.2.0",
     "markdown-toc": "^1.2.0",
     "react-snap": "1.22.1"
