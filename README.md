@@ -17,6 +17,8 @@ Based on original [Lingui tutorial](https://lingui.js.org/tutorials/setup-cra.ht
   * [Reimplement `LanguageSwitcher` for React Router](#reimplement-languageswitcher-for-react-router)
 - [Add meta tags with the help of React Helmet](#add-meta-tags-with-the-help-of-react-helmet)
 - [Add prerendering with the help of react-snap](#add-prerendering-with-the-help-of-react-snap)
+  * [Flash of the white screen](#flash-of-the-white-screen)
+  * [ConcurentMode](#concurentmode)
 
 <!-- tocstop -->
 
@@ -484,3 +486,70 @@ Add `postbuild` hook to the `package.json`:
 ```
 
 And you done!
+
+### Flash of the white screen
+
+On the one side, we have prerendered HTML which will start to render as soon as the browser will get it (around 2s in the US on average 3G). On the other side, we have React which will start to render as soon as all scripts will be downloaded (around 3s in the US on average 3G, for the given example).
+
+When React will start to render and if not all dynamic resources will be loaded it will flush all the content it has and typically this is the almost white (empty) screen. This where we get "Flash of the white screen". Dynamic resources can be: async components (`React.lazy(() => import())`), locale catalog (`import("./locales/" + locale + "/messages.js");`).
+
+It looks like this:
+
+![](public/filmstrip-flash.png)
+
+To solve the problem we need to wait for all resources to load before React will flush the changes to the DOM.
+
+We can do this with loader library like, `react-loadable` or `loadable-components`. See more details [here](https://github.com/stereobooster/react-snap#async-components).
+
+Or we can do this with new `React.lazy`, `<Suspense />` and `<ConcurentMode />`.
+
+### ConcurentMode
+
+`<ConcurentMode />` marked as unstable (use at your own risk), so it can change in the future. Read more on how to use it and about caveats [here](https://github.com/stereobooster/react-async-issue).
+
+```js
+const ConcurrentMode = React.unstable_ConcurrentMode;
+const RootApp = (
+  <ConcurrentMode>
+    <Suspense fallback={<div>Loading...</div>} maxDuration={5000}>
+      <App />
+    </Suspense>
+  </ConcurrentMode>
+);
+const rootElement = document.getElementById("root");
+const root = ReactDom.unstable_createRoot(rootElement, { hydrate: true });
+root.render(RootApp);
+```
+
+This is the first hack we need.
+
+The second one is that we need to repurpose `React.lazy` to wait for subresource. React team will eventually add `Cache` for this, but for now, let's keep hacking.
+
+```js
+const cache = {};
+export default ({ locale, children }) => {
+  const SuspendChildren =
+    cache[locale] ||
+    React.lazy(() =>
+      i18n.activate(locale).then(() => ({
+        __esModule: true,
+        default: ({ children }) => (
+          <I18nProvider i18n={i18n}>{children}</I18nProvider>
+        )
+      }))
+    );
+  cache[locale] = SuspendChildren;
+  return <SuspendChildren>{children}</SuspendChildren>;
+};
+```
+
+- `i18n.activate(locale)` returns promise, which we "convert to ES6" module e.g. `i18n.activate(locale).then(() => ({ __esModule: true, ...}))` is equivalent to `import()`.
+- `default: ...` - default export of pseudo ES6 module
+- `({children}) => <I18nProvider i18n={i18n}>{children}</I18nProvider>` react functional component
+- `<SuspendChildren />` will tell `<Suspense />` at the top level to pause rendering until language catalog is loaded
+
+`<ConcurentMode />` will enable `<StrictMode />` and it will complain about unsafe methods in `react-router`, `react-router-dom`. So we will need to update to beta version in which issue is fixed. [`react-helmet` also incompatible with `<StrictMode />`](https://github.com/nfl/react-helmet/issues/426), so we need to replace it with `react-helmet-async`.
+
+One way or another but we "fixed" it.
+
+![](public/filmstrip-no-flash.png)

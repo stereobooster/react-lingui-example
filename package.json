@@ -21,7 +21,7 @@
     "extract": "lingui extract",
     "compile": "lingui compile",
     "deploy": "gh-pages -d ./build",
-    "markdown-toc": "markdown-toc -i ./README.md",
+    "toc": "markdown-toc -i ./README.md",
     "postbuild": "react-snap"
   },
   "eslintConfig": {
