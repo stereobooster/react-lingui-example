@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/react-lingui-example/static/js/runtime~main.cf6588c9.js"
   },
   {
-    "revision": "802f8f6c4c44181e8c6c",
-    "url": "/react-lingui-example/static/js/main.802f8f6c.chunk.js"
+    "revision": "a568b7effdf2d67de12d",
+    "url": "/react-lingui-example/static/js/main.a568b7ef.chunk.js"
   },
   {
     "revision": "f4e7211d92b1e9df810c",
@@ -16,15 +16,15 @@ self.__precacheManifest = [
     "url": "/react-lingui-example/static/js/i18n-0.8aac7433.chunk.js"
   },
   {
-    "revision": "6b54c86ac5551ed17d00",
-    "url": "/react-lingui-example/static/js/3.6b54c86a.chunk.js"
+    "revision": "3e0fb4bc980c80bc30d3",
+    "url": "/react-lingui-example/static/js/3.3e0fb4bc.chunk.js"
   },
   {
-    "revision": "802f8f6c4c44181e8c6c",
+    "revision": "a568b7effdf2d67de12d",
     "url": "/react-lingui-example/static/css/main.e853a6d3.chunk.css"
   },
   {
-    "revision": "7b25339551e839f6480b652f701e97ec",
+    "revision": "c5a1d8e198031d7fb037dcbce6cb687b",
     "url": "/react-lingui-example/index.html"
   }
 ];
