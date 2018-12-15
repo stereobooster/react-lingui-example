@@ -1,7 +1,7 @@
 {
   "main.css": "/react-lingui-example/static/css/main.ad7a93eb.chunk.css",
-  "main.js": "/react-lingui-example/static/js/main.5248856f.chunk.js",
-  "main.js.map": "/react-lingui-example/static/js/main.5248856f.chunk.js.map",
+  "main.js": "/react-lingui-example/static/js/main.c47e909b.chunk.js",
+  "main.js.map": "/react-lingui-example/static/js/main.c47e909b.chunk.js.map",
   "i18n-0.js": "/react-lingui-example/static/js/i18n-0.002e91db.chunk.js",
   "i18n-0.js.map": "/react-lingui-example/static/js/i18n-0.002e91db.chunk.js.map",
   "i18n-1.js": "/react-lingui-example/static/js/i18n-1.de0b6baa.chunk.js",
@@ -12,6 +12,6 @@
   "runtime~main.js.map": "/react-lingui-example/static/js/runtime~main.a8d51f0e.js.map",
   "static/css/main.ad7a93eb.chunk.css.map": "/react-lingui-example/static/css/main.ad7a93eb.chunk.css.map",
   "index.html": "/react-lingui-example/index.html",
-  "precache-manifest.c529f8b6269d865bfcd0281bfa42444b.js": "/react-lingui-example/precache-manifest.c529f8b6269d865bfcd0281bfa42444b.js",
+  "precache-manifest.fce063568a85f78adc9362ae91210c30.js": "/react-lingui-example/precache-manifest.fce063568a85f78adc9362ae91210c30.js",
   "service-worker.js": "/react-lingui-example/service-worker.js"
 }
