@@ -4,6 +4,7 @@ import { I18nProvider } from "@lingui/react";
 import { i18n, defaultLocale, supportedLocale } from "./i18n";
 import Home from "./Home";
 import NotFound from "./NotFound";
+import { basePath } from "./config";
 
 const I18nRoutes = ({ match }) => {
   let { locale } = match.params;
@@ -35,7 +36,7 @@ const RootRedirect = () => {
     defaultLocale
   ).split("-");
   if (!supportedLocale(locale)) locale = defaultLocale;
-  return <Redirect to={`/${locale}`} />;
+  return <Redirect to={`${basePath}/${locale}`} />;
 };
 
 class App extends Component {
@@ -43,8 +44,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={RootRedirect} exact />
-          <Route path="/:locale" component={I18nRoutes} />
+          <Route path={`${basePath}/`} component={RootRedirect} exact />
+          <Route path={`${basePath}/:locale`} component={I18nRoutes} />
         </Switch>
       </BrowserRouter>
     );
