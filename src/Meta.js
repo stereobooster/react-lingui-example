@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Helmet from "react-helmet";
+import Helmet from 'react-helmet-async';
 
 export default ({ locales }) => (
   <Route
